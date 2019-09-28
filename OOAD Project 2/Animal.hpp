@@ -18,18 +18,17 @@ public:
         is_asleep = true;
     }
     
-    Animal(std::string name, std::string className){
+    Animal(std::string name_, std::string className){
         classname = className;
-        name = name;
+        name = name_;
     }
     
     std::string getName(){
-        classname = "Animal";
         return name;
     }
     
-    void setName(std::string name){
-        name = name;
+    void setName(std::string name_){
+        name = name_;
     }
     
     bool getAsleep(){
@@ -45,13 +44,33 @@ public:
     }
     
     std::string setAsleep(bool asleep);
+    /*{
+        is_asleep = asleep;
+        if(!is_asleep){
+            return name + " of " + classname + " is awake";
+        }
+        else{
+            return name + " of " + classname + " is awake";
+        }
+    }
+     */
     
     virtual std::string roam();
-    
+    /*{
+        return name + " of " + classname + " is roaming";
+    }
+    */
     virtual std::string eat();
+    /*{
+        return "";
+    }
+     */
     
     virtual std::string makeNoise();
-    
+    /*{
+        return "";
+    }
+    */
 private:
     std::string name;
     bool is_asleep;

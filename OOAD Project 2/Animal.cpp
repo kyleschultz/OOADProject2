@@ -29,3 +29,4 @@ std::string Animal::eat(){
 std::string Animal::makeNoise(){
     return "";
 }
+

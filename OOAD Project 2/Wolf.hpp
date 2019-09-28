@@ -1,25 +1,26 @@
 //
-//  Canine.hpp
+//  Wolf.hpp
 //  OOAD Project 2
 //
-//  Created by Kyle Schultz on 9/23/19.
+//  Created by Kyle Schultz on 9/25/19.
 //  Copyright © 2019 Kyle Schultz. All rights reserved.
 //
 
-#ifndef Canine_hpp
-#define Canine_hpp
+#ifndef Wolf_hpp
+#define Wolf_hpp
 
-#include "Animal.hpp"
 #include <stdio.h>
-#include <string>
+#include "Canine.hpp"
 
-class Canine : public Animal{
+
+class Wolf: public Canine{
 public:
-    Canine(){
+    Wolf(){
         
     }
     
-    Canine(std::string name, std::string className){
+    
+    Wolf(std::string name, std::string className){
         setClassname(className);
         setName(name);
     }
@@ -27,7 +28,7 @@ public:
     std::string eat();
     /*{
         std::string name = getName();
-        std::string result = name + " of " + getClassname() + " is eating Meat";
+        std::string result = name + " of " + getClassname() + " is eating kibble";
         return result;
     }
      */
@@ -35,12 +36,11 @@ public:
     std::string makeNoise();
     /*{
         std::string name = getName();
-        std::string noise = name + " of " + getClassname() + " is barking";
+        std::string noise = name + " of " + getClassname() + " is howling";
         return noise;
     }
      */
+    
 };
 
-#endif /* Canine_hpp */
-
-
+#endif /* Wolf_hpp */

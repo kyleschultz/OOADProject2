@@ -8,6 +8,7 @@
 
 #include "Canine.hpp"
 
+
 std::string Canine::eat() {
     std::string name = getName();
     std::string result = name + " of " + getClassname() + " is eating Meat";
@@ -19,3 +20,4 @@ std::string Canine::makeNoise(){
     std::string noise = name + " of " + getClassname() + " is barking";
     return noise;
 }
+ 
