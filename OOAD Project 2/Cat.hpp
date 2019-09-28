@@ -13,6 +13,7 @@
 #include "Feline.hpp"
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>       /* time */
+#include "CatNoiseBehavior.hpp"
 
 class Cat : public Feline {
 public:
@@ -24,6 +25,8 @@ public:
         srand(time(NULL));
         setClassname(className);
         setName(name);
+        CatNoiseBehavior* nb = new CatNoiseBehavior();
+        setNoiseBehavior(nb);
     }
     
     std::string eat();

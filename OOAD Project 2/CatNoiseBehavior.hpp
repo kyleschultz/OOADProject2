@@ -1,18 +1,20 @@
 //
-//  CanineNoiseBehavior.hpp
+//  CatNoiseBehavior.hpp
 //  OOAD Project 2
 //
 //  Created by Kyle Schultz on 9/28/19.
 //  Copyright © 2019 Kyle Schultz. All rights reserved.
 //
 
-#ifndef CanineNoiseBehavior_hpp
-#define CanineNoiseBehavior_hpp
+#ifndef CatNoiseBehavior_hpp
+#define CatNoiseBehavior_hpp
 
+#include <stdio.h>
 #include "NoiseBehavior.hpp"
 
-class CanineNoiseBehavior : public NoiseBehavior {
+class CatNoiseBehavior : public NoiseBehavior {
 public:
     std::string makeNoise();
 };
-#endif /* CanineNoiseBehavior_hpp */
+
+#endif /* CatNoiseBehavior_hpp */

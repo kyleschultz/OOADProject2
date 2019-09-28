@@ -27,8 +27,9 @@ std::string Animal::eat(){
 }
 
 
-std::string Animal::makeNoise(){
-    return noiseBehavior->makeNoise();
+std::string Animal::performNoise(){
+    std::string name = getName();
+    return name + " of " + getClassname() + noiseBehavior->makeNoise();
 }
 
 

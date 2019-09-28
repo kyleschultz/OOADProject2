@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include "Canine.hpp"
+#include "WolfNoiseBehavior.hpp"
 
 
 class Wolf: public Canine{
@@ -23,6 +24,8 @@ public:
     Wolf(std::string name, std::string className){
         setClassname(className);
         setName(name);
+        WolfNoiseBehavior* nb = new WolfNoiseBehavior();
+        setNoiseBehavior(nb);
     }
     
     std::string eat();

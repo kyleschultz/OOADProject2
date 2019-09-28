@@ -71,7 +71,7 @@ public:
     }
      */
     
-    virtual std::string makeNoise();
+    virtual std::string performNoise();
     /*{
         return "";
     }

@@ -8,11 +8,8 @@
 
 #include "CanineNoiseBehavior.hpp"
 
-
-
 std::string CanineNoiseBehavior::makeNoise(){
-    std::string name = getName();
-    std::string noise = name + " of " + getClassname() + " is barking";
+    std::string noise = " is barking";
     return noise;
 }
 

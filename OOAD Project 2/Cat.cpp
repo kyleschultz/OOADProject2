@@ -22,7 +22,7 @@ std::string Cat::roam(){
 }
 
 std::string Cat::catDoSomething(){
-    int randChoice = rand() % 3;
+    int randChoice = rand() % 2;
     std::string result;
     switch (randChoice) {
         case 0:
