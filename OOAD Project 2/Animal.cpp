@@ -14,7 +14,7 @@ std::string Animal::setAsleep(bool asleep){
         return name + " of " + classname + " is awake";
     }
     else{
-        return name + " of " + classname + " is awake";
+        return name + " of " + classname + " is asleep";
     }
 }
 
