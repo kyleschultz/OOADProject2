@@ -15,9 +15,11 @@ std::string Feline::eat() {
     return result;
 }
 
+/*
 std::string Feline::makeNoise(){
     std::string name = getName();
     std::string noise = name + " of " + getClassname() + " is meowing";
     return noise;
 }
+ */
 

@@ -32,7 +32,7 @@ public:
     }
      */
     
-    std::string makeNoise();
+    //std::string makeNoise();
     /*{
         return catDoSomething();
     }

@@ -13,9 +13,9 @@ std::string Cat::eat(){
     return catDoSomething();
 }
 
-std::string Cat::makeNoise(){
-    return catDoSomething();
-}
+//std::string Cat::makeNoise(){
+//    return catDoSomething();
+//}
 
 std::string Cat::roam(){
     return catDoSomething();
@@ -28,10 +28,11 @@ std::string Cat::catDoSomething(){
         case 0:
             result = getName() + " of " + getClassname() + " is eating fancy feast";
             break;
-        case 1:
+        /*case 1:
             result = getName() + " of " + getClassname() + " is purring";
             break;
-        case 2:
+        */
+        case 1:
             result = getName() + " of " + getClassname() + " is roaming";
         default:
             break;

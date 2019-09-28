@@ -31,7 +31,7 @@ public:
     }
      */
     
-    std::string makeNoise();
+    //std::string makeNoise();
     /*{
         std::string name = getName();
         std::string noise = name + " of " + getClassname() + " is meowing";

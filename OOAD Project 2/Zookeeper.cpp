@@ -19,11 +19,13 @@ void Zookeeper::wake(){
     }
 }
 
+/*
 void Zookeeper::rollCall(){
     for(auto a: animals){
         std::cout << a->makeNoise() + "\n";
     }
 }
+*/
 
 void Zookeeper::feed(){
     for(auto a: animals){

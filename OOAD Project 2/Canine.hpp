@@ -10,18 +10,23 @@
 #define Canine_hpp
 
 #include "Animal.hpp"
+#include "NoiseBehavior.hpp"
+#include "CanineNoiseBehavior.hpp"
 #include <stdio.h>
 #include <string>
 
 class Canine : public Animal{
 public:
     Canine(){
-        
+        CanineNoiseBehavior* nb = new CanineNoiseBehavior();
+        setNoiseBehavior(nb);
     }
     
     Canine(std::string name, std::string className){
         setClassname(className);
         setName(name);
+        CanineNoiseBehavior* nb = new CanineNoiseBehavior();
+        setNoiseBehavior(nb);
     }
     
     std::string eat();
@@ -32,7 +37,7 @@ public:
     }
      */
     
-    std::string makeNoise();
+    //std::string makeNoise();
     /*{
         std::string name = getName();
         std::string noise = name + " of " + getClassname() + " is barking";

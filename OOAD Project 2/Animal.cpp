@@ -26,7 +26,9 @@ std::string Animal::eat(){
     return "";
 }
 
+
 std::string Animal::makeNoise(){
-    return "";
+    return noiseBehavior->makeNoise();
 }
+
 

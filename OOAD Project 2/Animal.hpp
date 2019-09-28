@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <string>
+#include "NoiseBehavior.hpp"
 
 class Animal {
 public:
@@ -21,6 +22,10 @@ public:
     Animal(std::string name_, std::string className){
         classname = className;
         name = name_;
+    }
+    
+    void setNoiseBehavior(NoiseBehavior* nb){
+        noiseBehavior = nb;
     }
     
     std::string getName(){
@@ -75,6 +80,7 @@ private:
     std::string name;
     bool is_asleep;
     std::string classname;
+    NoiseBehavior* noiseBehavior;
 };
 
 #endif /* Animal_hpp */

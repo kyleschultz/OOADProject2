@@ -15,9 +15,10 @@ std::string Wolf::eat() {
     return result;
 }
 
+/*
 std::string Wolf::makeNoise(){
     std::string name = getName();
     std::string noise = name + " of " + getClassname() + " is howling";
     return noise;
 }
-
+*/

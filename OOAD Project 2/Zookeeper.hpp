@@ -34,7 +34,7 @@ public:
     }
      */
     
-    void rollCall();
+    //void rollCall();
     /*{
         for(auto a: animals){
             std::cout << a->makeNoise() + "\n";
