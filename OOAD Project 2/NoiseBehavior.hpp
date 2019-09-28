@@ -13,6 +13,7 @@
 #include <iostream>
 #include <string>
 
+/*Strategy pattern applied here*/
 class NoiseBehavior {
 public:
     //pure virtual function

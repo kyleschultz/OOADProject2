@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 #include <string>
-
+/*Observer Pattern applied here*/
 class DisplayElement {
 public:
     virtual void announce(std::string condition) = 0;

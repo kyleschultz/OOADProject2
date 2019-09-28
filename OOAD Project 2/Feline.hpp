@@ -22,6 +22,7 @@ public:
     Feline(std::string name, std::string className){
         setClassname(className);
         setName(name);
+        /*Strategy pattern applied here*/
         FelineNoiseBehavior* nb = new FelineNoiseBehavior();
         setNoiseBehavior(nb);
     }

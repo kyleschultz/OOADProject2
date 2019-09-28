@@ -22,6 +22,7 @@ int main(int argc, const char * argv[]) {
     //std::cout << "Here!\n";
     
     Zookeeper* Zoe = new Zookeeper();
+    /*Observer Pattern applied here*/
     ZooAnnouncer* announcer = new ZooAnnouncer(Zoe);
     Animal* Frank = new Feline("Frank", "Feline");
     Animal* Fiona = new Feline("Fiona", "Feline");
@@ -52,7 +53,7 @@ int main(int argc, const char * argv[]) {
     Zoe->letRoam();
     
     Zoe->closeZoo();
-    
+    /*Observer Pattern applied here*/
     Zoe->removeObserver(announcer);
     
     

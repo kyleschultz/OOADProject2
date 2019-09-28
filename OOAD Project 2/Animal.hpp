@@ -23,7 +23,7 @@ public:
         classname = className;
         name = name_;
     }
-    
+    /*Strategy pattern being applied here*/
     void setNoiseBehavior(NoiseBehavior* nb){
         noiseBehavior = nb;
     }
@@ -70,7 +70,7 @@ public:
         return "";
     }
      */
-    
+    /*Strategy Pattern applied here*/
     virtual std::string performNoise();
     /*{
         return "";
@@ -80,6 +80,7 @@ private:
     std::string name;
     bool is_asleep;
     std::string classname;
+    /*Strategy pattern applied here*/
     NoiseBehavior* noiseBehavior;
 };
 

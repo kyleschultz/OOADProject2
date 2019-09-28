@@ -7,7 +7,7 @@
 //
 
 #include "CanineNoiseBehavior.hpp"
-
+/*Strategy pattern applied here*/
 std::string CanineNoiseBehavior::makeNoise(){
     std::string noise = " is barking";
     return noise;

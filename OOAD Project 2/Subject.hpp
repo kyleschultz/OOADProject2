@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 #include "Observer.hpp"
-
+/*Observer Pattern applied here*/
 class Subject{
 public:
     virtual void registerObserver(Observer* o) = 0;

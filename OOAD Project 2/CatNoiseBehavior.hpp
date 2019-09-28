@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 #include "NoiseBehavior.hpp"
-
+/*Strategy pattern applied here*/
 class CatNoiseBehavior : public NoiseBehavior {
 public:
     std::string makeNoise();

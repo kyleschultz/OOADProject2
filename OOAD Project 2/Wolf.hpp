@@ -24,6 +24,7 @@ public:
     Wolf(std::string name, std::string className){
         setClassname(className);
         setName(name);
+        /*Strategy pattern applied here*/
         WolfNoiseBehavior* nb = new WolfNoiseBehavior();
         setNoiseBehavior(nb);
     }

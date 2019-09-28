@@ -8,7 +8,7 @@
 
 #include "ZooAnnouncer.hpp"
 
-
+/*Observer Pattern applied here*/
 void ZooAnnouncer::update(bool wakeAnnounce, bool roamAnnounce, bool feedAnnounce, bool noiseAnnounce, bool sleepAnnounce){
     if(wakeAnnounce){
         announce("wake");

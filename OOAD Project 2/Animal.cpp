@@ -26,7 +26,7 @@ std::string Animal::eat(){
     return "";
 }
 
-
+/*Strategy pattern applied here*/
 std::string Animal::performNoise(){
     std::string name = getName();
     return name + " of " + getClassname() + noiseBehavior->makeNoise();

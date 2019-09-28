@@ -7,7 +7,7 @@
 //
 
 #include "WolfNoiseBehavior.hpp"
-
+/*Strategy pattern applied here*/
 std::string WolfNoiseBehavior::makeNoise(){
     std::string noise = " is howling";
     return noise;

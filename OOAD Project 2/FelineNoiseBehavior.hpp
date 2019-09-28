@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 #include "NoiseBehavior.hpp"
-
+/*Strategy pattern applied here*/
 class FelineNoiseBehavior : public NoiseBehavior {
 public:
     std::string makeNoise();

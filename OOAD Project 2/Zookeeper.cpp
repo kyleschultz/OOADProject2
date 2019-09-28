@@ -9,6 +9,7 @@
 #include "Zookeeper.hpp"
 #include "Animal.hpp"
 
+/*Observer Pattern applied here*/
 void Zookeeper::setActivities(std::string cond){
     if(cond == "wake"){
         wakeAnnounce = true;
@@ -52,6 +53,7 @@ void Zookeeper::addAnimal(Animal* a){
 }
 
 void Zookeeper::wake(){
+    /*Observer Pattern applied here*/
     setActivities("wake");
     zookeeperChange();
     for(auto a: animals){
@@ -61,6 +63,7 @@ void Zookeeper::wake(){
 
 
 void Zookeeper::rollCall(){
+    /*Observer Pattern applied here*/
     setActivities("noise");
     zookeeperChange();
     for(auto a: animals){
@@ -70,6 +73,7 @@ void Zookeeper::rollCall(){
 
 
 void Zookeeper::feed(){
+    /*Observer Pattern applied here*/
     setActivities("feed");
     zookeeperChange();
     for(auto a: animals){
@@ -78,6 +82,7 @@ void Zookeeper::feed(){
 }
 
 void Zookeeper::letRoam(){
+    /*Observer Pattern applied here*/
     setActivities("roam");
     zookeeperChange();
     for(auto a: animals){
@@ -86,29 +91,30 @@ void Zookeeper::letRoam(){
 }
 
 void Zookeeper::closeZoo(){
+    /*Observer Pattern applied here*/
     setActivities("sleep");
     zookeeperChange();
     for(auto a: animals){
         std::cout << a->setAsleep(true) + "\n";
     }
 }
-
+/*Observer Pattern applied here*/
 void Zookeeper::registerObserver(Observer *o){
     observers.push_back(o);
 }
-
+/*Observer Pattern applied here*/
 void Zookeeper::removeObserver(Observer *o){
     observers.clear();
     delete(o);
 }
-
+/*Observer Pattern applied here*/
 void Zookeeper::notifyObserver(){
     for (int i = 0; i < observers.size(); i++) {
         Observer* obs = observers[i];
         obs->update(wakeAnnounce, roamAnnounce, feedAnnounce, noiseAnnounce, sleepAnnounce);
     }
 }
-
+/*Observer Pattern applied here*/
 void Zookeeper::zookeeperChange(){
     notifyObserver();
 }

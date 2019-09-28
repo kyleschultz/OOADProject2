@@ -44,18 +44,19 @@ public:
     void letRoam();
     
     void closeZoo();
-    
+    /*Observer Pattern applied here*/
     void registerObserver(Observer* o);
-    
+    /*Observer Pattern applied here*/
     void removeObserver(Observer* o);
-    
+    /*Observer Pattern applied here*/
     void notifyObserver();
-    
+    /*Observer Pattern applied here*/
     void zookeeperChange();
     
 private:
     std::string name;
     std::vector<Animal *> animals;
+    /*Observer Pattern applied here*/
     std::vector<Observer*> observers;
     bool wakeAnnounce;
     bool roamAnnounce;

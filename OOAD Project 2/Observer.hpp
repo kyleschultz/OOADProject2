@@ -9,7 +9,7 @@
 #ifndef Observer_hpp
 #define Observer_hpp
 #include <stdio.h>
-
+/*Observer Pattern applied here*/
 class Observer{
 public:
     virtual void update(bool wakeAnnounce, bool roamAnnounce, bool feedAnnounce, bool noiseAnnounce, bool sleepAnnounce) = 0;

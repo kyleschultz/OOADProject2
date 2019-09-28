@@ -25,6 +25,7 @@ public:
         srand(time(NULL));
         setClassname(className);
         setName(name);
+        /*Strategy pattern applied here*/
         CatNoiseBehavior* nb = new CatNoiseBehavior();
         setNoiseBehavior(nb);
     }

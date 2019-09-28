@@ -18,6 +18,7 @@
 class Canine : public Animal{
 public:
     Canine(){
+        /*Strategy pattern applied here*/
         CanineNoiseBehavior* nb = new CanineNoiseBehavior();
         setNoiseBehavior(nb);
     }
@@ -25,6 +26,7 @@ public:
     Canine(std::string name, std::string className){
         setClassname(className);
         setName(name);
+        /*Strategy pattern applied here*/
         CanineNoiseBehavior* nb = new CanineNoiseBehavior();
         setNoiseBehavior(nb);
     }

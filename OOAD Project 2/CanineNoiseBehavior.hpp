@@ -10,7 +10,7 @@
 #define CanineNoiseBehavior_hpp
 
 #include "NoiseBehavior.hpp"
-
+/*Strategy pattern applied here*/
 class CanineNoiseBehavior : public NoiseBehavior {
 public:
     std::string makeNoise();

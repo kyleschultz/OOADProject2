@@ -17,6 +17,7 @@
 #include <vector>
 #include <iostream>
 
+/*Observer Pattern applied here*/
 class ZooAnnouncer: public Observer, public DisplayElement {
 public:
     ZooAnnouncer(Subject* z){

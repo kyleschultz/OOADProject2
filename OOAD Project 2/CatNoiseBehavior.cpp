@@ -7,7 +7,7 @@
 //
 
 #include "CatNoiseBehavior.hpp"
-
+/*Strategy pattern applied here*/
 std::string CatNoiseBehavior::makeNoise(){
     std::string noise = " is purring";
     return noise;
