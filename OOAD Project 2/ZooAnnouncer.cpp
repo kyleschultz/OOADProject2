@@ -29,18 +29,18 @@ void ZooAnnouncer::update(bool wakeAnnounce, bool roamAnnounce, bool feedAnnounc
 
 void ZooAnnouncer::announce(std::string condition){
     if (condition == "wake") {
-        std::cout << "This is the zoo announcer, the Zookeeper is about to wake the animals\n";
+        std::cout << "\nThis is the zoo announcer, the Zookeeper is about to wake the animals\n\n";
     }
     else if (condition == "roam"){
-        std::cout << "This is the zoo announcer, the Zookeeper is about to let the animals roam\n";
+        std::cout << "\nThis is the zoo announcer, the Zookeeper is about to let the animals roam\n\n";
     }
     else if (condition == "feed"){
-        std::cout << "This is the zoo announcer, the Zookeeper is about to feed the animals\n";
+        std::cout << "\nThis is the zoo announcer, the Zookeeper is about to feed the animals\n\n";
     }
     else if (condition == "noise"){
-        std::cout << "This is the zoo announcer, the Zookeeper is about to roll call the animals\n";
+        std::cout << "\nThis is the zoo announcer, the Zookeeper is about to roll call the animals\n\n";
     }
     else if (condition == "sleep"){
-        std::cout << "This is the zoo announcer, the Zookeeper is about to put the animals to sleep\n";
+        std::cout << "\nThis is the zoo announcer, the Zookeeper is about to put the animals to sleep\n\n";
     }
 }
