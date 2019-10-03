@@ -22,6 +22,6 @@ observer in this scenario.
 Instructions to run code:
 	From the same directory as the main.cpp file open the terminal.  
 	
-### To compile, type: `g++ main.cpp -o zoo`  
+### To compile, type: `g++ -std=c++11 -o zoo main.cpp`  
 ### To run, type: `./zoo`  
 The code will then execute and print out proper statements.
