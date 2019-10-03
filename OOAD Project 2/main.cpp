@@ -7,19 +7,19 @@
 //
 
 #include <iostream>
-#include "Cat.hpp"
-#include "Wolf.hpp"
-#include "Zookeeper.hpp"
-#include "ZooAnnouncer.hpp"
-
+#include "Animal.cpp"
+#include "Feline.cpp"
+#include "Cat.cpp"
+#include "Canine.cpp"
+#include "Wolf.cpp"
+#include "Zookeeper.cpp"
+#include "ZooAnnouncer.cpp"
+#include "CatNoiseBehavior.cpp"
+#include "CanineNoiseBehavior.cpp"
+#include "FelineNoiseBehavior.cpp"
+#include "WolfNoiseBehavior.cpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    //std::cout << "Hello, World!\n";
-    
-    //Animal* Willie = new Wolf("Willie", "Wolf");
-    //std::cout << Willie->getName();
-    //std::cout << "Here!\n";
     
     Zookeeper* Zoe = new Zookeeper();
     /*Observer Pattern applied here*/
@@ -56,8 +56,7 @@ int main(int argc, const char * argv[]) {
     /*Observer Pattern applied here*/
     Zoe->removeObserver(announcer);
     
-    
-    
+    delete(Zoe);
     
     return 0;
 }
