@@ -1,11 +1,3 @@
-//
-//  Feline.hpp
-//  OOAD Project 2
-//
-//  Created by Kyle Schultz on 9/25/19.
-//  Copyright © 2019 Kyle Schultz. All rights reserved.
-//
-
 #ifndef Feline_hpp
 #define Feline_hpp
 
@@ -15,10 +7,17 @@
 
 class Feline: public Animal{
 public:
+    /*
+     Default constructor
+     */
     Feline(){
         
     }
     
+    /*
+     Secondary constructor that sets name, classname and noiseBehavior
+     @param name Name of Feline, className Name of Wolf class
+     */
     Feline(std::string name, std::string className){
         setClassname(className);
         setName(name);
@@ -28,21 +27,6 @@ public:
     }
     
     std::string eat();
-    /*{
-        std::string name = getName();
-        std::string result = name + " of " + getClassname() + " is eating Feline food";
-        return result;
-    }
-     */
-    
-    //std::string makeNoise();
-    /*{
-        std::string name = getName();
-        std::string noise = name + " of " + getClassname() + " is meowing";
-        return noise;
-    }
-     */
-    
 };
 
 #endif /* Feline_hpp */

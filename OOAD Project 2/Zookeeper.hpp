@@ -1,11 +1,3 @@
-//
-//  Zookeeper.hpp
-//  OOAD Project 2
-//
-//  Created by Kyle Schultz on 9/25/19.
-//  Copyright © 2019 Kyle Schultz. All rights reserved.
-//
-
 #ifndef Zookeeper_hpp
 #define Zookeeper_hpp
 

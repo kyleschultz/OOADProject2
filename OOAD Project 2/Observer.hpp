@@ -1,15 +1,10 @@
-//
-//  Observer.hpp
-//  OOAD Project 2
-//
-//  Created by Kyle Schultz on 9/28/19.
-//  Copyright © 2019 Kyle Schultz. All rights reserved.
-//
-
 #ifndef Observer_hpp
 #define Observer_hpp
 #include <stdio.h>
-/*Observer Pattern applied here*/
+/*
+ Observer Pattern applied here
+ Abstract class with pure virtual functions
+ */
 class Observer{
 public:
     virtual void update(bool wakeAnnounce, bool roamAnnounce, bool feedAnnounce, bool noiseAnnounce, bool sleepAnnounce) = 0;

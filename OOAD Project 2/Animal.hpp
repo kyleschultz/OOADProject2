@@ -1,11 +1,3 @@
-//
-//  Animal.hpp
-//  OOAD Project 2
-//
-//  Created by Kyle Schultz on 9/23/19.
-//  Copyright © 2019 Kyle Schultz. All rights reserved.
-//
-
 #ifndef Animal_hpp
 #define Animal_hpp
 
@@ -49,33 +41,14 @@ public:
     }
     
     std::string setAsleep(bool asleep);
-    /*{
-        is_asleep = asleep;
-        if(!is_asleep){
-            return name + " of " + classname + " is awake";
-        }
-        else{
-            return name + " of " + classname + " is awake";
-        }
-    }
-     */
     
     virtual std::string roam();
-    /*{
-        return name + " of " + classname + " is roaming";
-    }
-    */
+    
     virtual std::string eat();
-    /*{
-        return "";
-    }
-     */
+    
     /*Strategy Pattern applied here*/
     virtual std::string performNoise();
-    /*{
-        return "";
-    }
-    */
+    
 private:
     std::string name;
     bool is_asleep;

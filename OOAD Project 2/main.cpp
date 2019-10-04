@@ -1,11 +1,3 @@
-//
-//  main.cpp
-//  OOAD Project 2
-//
-//  Created by Kyle Schultz on 9/23/19.
-//  Copyright © 2019 Kyle Schultz. All rights reserved.
-//
-
 #include <iostream>
 #include "Animal.cpp"
 #include "Feline.cpp"
@@ -21,6 +13,7 @@
 
 int main(int argc, const char * argv[]) {
     
+    //create Zookeeper
     Zookeeper* Zoe = new Zookeeper();
     /*Observer Pattern applied here*/
     ZooAnnouncer* announcer = new ZooAnnouncer(Zoe);
@@ -44,18 +37,24 @@ int main(int argc, const char * argv[]) {
     Zoe->addAnimal(William);
     Zoe->addAnimal(Winnie);
     
+    //wake up animals
     Zoe->wake();
     
+    //roll call animals
     Zoe->rollCall();
     
+    //feed animals
     Zoe->feed();
     
+    //let animals roam
     Zoe->letRoam();
     
+    //put animals to sleep
     Zoe->closeZoo();
     /*Observer Pattern applied here*/
     Zoe->removeObserver(announcer);
     
+    //delete zookeeper
     delete(Zoe);
     
     return 0;

@@ -1,11 +1,3 @@
-//
-//  Cat.hpp
-//  OOAD Project 2
-//
-//  Created by Kyle Schultz on 9/25/19.
-//  Copyright © 2019 Kyle Schultz. All rights reserved.
-//
-
 #ifndef Cat_hpp
 #define Cat_hpp
 
@@ -17,56 +9,35 @@
 
 class Cat : public Feline {
 public:
+    /*
+        Default constructor
+    */
     Cat(){
         srand(time(NULL));
     }
     
+    /*
+        Secondary constructor
+        @param name Name of the cat, className Name of class
+    */
     Cat(std::string name, std::string className){
         srand(time(NULL));
         setClassname(className);
         setName(name);
         /*Strategy pattern applied here*/
         CatNoiseBehavior* nb = new CatNoiseBehavior();
+        //set cats noise behavior
         setNoiseBehavior(nb);
     }
     
+    //override eat
     std::string eat();
-    /*{
-        return catDoSomething();
-    }
-     */
     
-    //std::string makeNoise();
-    /*{
-        return catDoSomething();
-    }
-     */
-    
+    //override roam
     std::string roam();
-    /*{
-        return catDoSomething();
-    }
-     */
     
+    //random cat action
     std::string catDoSomething();
-    /*{
-        int randChoice = rand() % 3;
-        std::string result;
-        switch (randChoice) {
-            case 0:
-                result = getName() + " of " + getClassname() + " is eating fancy feast";
-                break;
-            case 1:
-                result = getName() + " of " + getClassname() + " is purring";
-                break;
-            case 2:
-                result = getName() + " of " + getClassname() + " is roaming";
-            default:
-                break;
-        }
-        return result;
-    }
-     */
 };
 
 

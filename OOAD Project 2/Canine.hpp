@@ -1,11 +1,3 @@
-//
-//  Canine.hpp
-//  OOAD Project 2
-//
-//  Created by Kyle Schultz on 9/23/19.
-//  Copyright © 2019 Kyle Schultz. All rights reserved.
-//
-
 #ifndef Canine_hpp
 #define Canine_hpp
 
@@ -17,12 +9,19 @@
 
 class Canine : public Animal{
 public:
+    /*
+     Defualt constructor
+     */
     Canine(){
         /*Strategy pattern applied here*/
         CanineNoiseBehavior* nb = new CanineNoiseBehavior();
         setNoiseBehavior(nb);
     }
     
+    /*
+     Secondary constructor that sets name, classname and noiseBehavior
+     @param name Name of Canine, className Name of Canine class
+     */
     Canine(std::string name, std::string className){
         setClassname(className);
         setName(name);
@@ -32,20 +31,7 @@ public:
     }
     
     std::string eat();
-    /*{
-        std::string name = getName();
-        std::string result = name + " of " + getClassname() + " is eating Meat";
-        return result;
-    }
-     */
-    
-    //std::string makeNoise();
-    /*{
-        std::string name = getName();
-        std::string noise = name + " of " + getClassname() + " is barking";
-        return noise;
-    }
-     */
+
 };
 
 #endif /* Canine_hpp */

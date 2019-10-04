@@ -1,17 +1,12 @@
-//
-//  Subject.hpp
-//  OOAD Project 2
-//
-//  Created by Kyle Schultz on 9/28/19.
-//  Copyright © 2019 Kyle Schultz. All rights reserved.
-//
-
 #ifndef Subject_hpp
 #define Subject_hpp
 
 #include <stdio.h>
 #include "Observer.hpp"
-/*Observer Pattern applied here*/
+/*
+ Observer Pattern applied here
+ Abstract class with pure virtual functions
+ */
 class Subject{
 public:
     virtual void registerObserver(Observer* o) = 0;

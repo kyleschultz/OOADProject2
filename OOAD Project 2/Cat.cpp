@@ -1,26 +1,22 @@
-//
-//  Cat.cpp
-//  OOAD Project 2
-//
-//  Created by Kyle Schultz on 9/25/19.
-//  Copyright © 2019 Kyle Schultz. All rights reserved.
-//
-
 #include "Cat.hpp"
 
-
+/*
+ Cat performs random action
+ */
 std::string Cat::eat(){
     return catDoSomething();
 }
 
-//std::string Cat::makeNoise(){
-//    return catDoSomething();
-//}
-
+/*
+ Cat performs random action
+ */
 std::string Cat::roam(){
     return catDoSomething();
 }
 
+/*
+    Chooses random action of cat eating or roaming
+ */
 std::string Cat::catDoSomething(){
     int randChoice = rand() % 2;
     std::string result;
@@ -28,10 +24,6 @@ std::string Cat::catDoSomething(){
         case 0:
             result = getName() + " of " + getClassname() + " is eating fancy feast";
             break;
-        /*case 1:
-            result = getName() + " of " + getClassname() + " is purring";
-            break;
-        */
         case 1:
             result = getName() + " of " + getClassname() + " is roaming";
         default:

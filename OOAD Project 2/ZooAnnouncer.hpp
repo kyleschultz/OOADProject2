@@ -1,11 +1,3 @@
-//
-//  Announcer.hpp
-//  OOAD Project 2
-//
-//  Created by Kyle Schultz on 9/28/19.
-//  Copyright © 2019 Kyle Schultz. All rights reserved.
-//
-
 #ifndef Announcer_hpp
 #define Announcer_hpp
 
@@ -20,6 +12,10 @@
 /*Observer Pattern applied here*/
 class ZooAnnouncer: public Observer, public DisplayElement {
 public:
+    /*
+        Constructor that registers itself as an observer of the subject
+        @param z Subject to register to
+    */
     ZooAnnouncer(Subject* z){
         wake = false;
         roam = false;

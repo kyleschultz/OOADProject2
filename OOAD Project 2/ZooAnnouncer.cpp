@@ -1,14 +1,10 @@
-//
-//  Announcer.cpp
-//  OOAD Project 2
-//
-//  Created by Kyle Schultz on 9/28/19.
-//  Copyright © 2019 Kyle Schultz. All rights reserved.
-//
-
 #include "ZooAnnouncer.hpp"
 
-/*Observer Pattern applied here*/
+/*
+ Observer Pattern applied here
+ Updates the Announcer to take action
+ @param wakeAnnounce Boolean to check if zookeeper is waking the animals, roamAnnounce Boolean to check if zookeeper is letting the animals roam, noiseAnnounce Boolean to check if zookeeper is roll calling the animals, sleepAnnounce Boolean to check if zookeeper is putting the animals to sleep
+ */
 void ZooAnnouncer::update(bool wakeAnnounce, bool roamAnnounce, bool feedAnnounce, bool noiseAnnounce, bool sleepAnnounce){
     if(wakeAnnounce){
         announce("wake");
@@ -27,6 +23,10 @@ void ZooAnnouncer::update(bool wakeAnnounce, bool roamAnnounce, bool feedAnnounc
     }
 }
 
+/*
+ ZooAnnouncer announce the next action
+ @param condition String of the action that is going to take place
+ */
 void ZooAnnouncer::announce(std::string condition){
     if (condition == "wake") {
         std::cout << "\nThis is the zoo announcer, the Zookeeper is about to wake the animals\n\n";

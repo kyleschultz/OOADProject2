@@ -1,11 +1,3 @@
-//
-//  NoiseBehavior.hpp
-//  OOAD Project 2
-//
-//  Created by Kyle Schultz on 9/28/19.
-//  Copyright © 2019 Kyle Schultz. All rights reserved.
-//
-
 #ifndef NoiseBehavior_hpp
 #define NoiseBehavior_hpp
 
@@ -13,7 +5,10 @@
 #include <iostream>
 #include <string>
 
-/*Strategy pattern applied here*/
+/*
+ Strategy pattern applied here
+ Abstract class for interface
+ */
 class NoiseBehavior {
 public:
     //pure virtual function
